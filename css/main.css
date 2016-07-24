@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+}
+
+*:focus {
+    outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+a:hover {
+  color: #ddd;
+}
+a:focus {
+  outline: none;
+}
+
+html{
+    color:white;
+    background-color: #221C1B;
+    font-family: Montserrat,sans-serif;
+}
+
+#topBar{
+    font-size: 0.85em;
+    padding: 20px 20px;
+}
+
+#bottomBar{
+    position: absolute;
+    width: 100%;
+    font-size: 0.85em;
+    padding: 20px 20px;
+    bottom: 0px;
+    left: 0px;
+}
+
+#mainContainer{
+    width: 500px;
+    height: 500px;
+    border:hidden;
+    border-radius: 50% 50%;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    margin: -250px -250px;
+    vertical-align:middle;
+}
+
+.inputcolor{
+    font-size: 2.5em;
+    text-align: center;
+    width:350px;
+    display: block;
+    margin: 30px auto;
+    border:none;
+    border-bottom: inset thin ;
+    border-color: beige
+    line-height: 55px;
+    background: transparent;
+}
+
+.inputcolor:first-child{
+    margin-top:130px;
+}
+
+.colorWarn{
+    border:solid;
+    border-radius: 50%;
+    background-color: burlywood;
+    font-size: 1.4em;
+    font-weight: 100;
+    height:30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    float: right;
+    margin: -75px -40px;
+    display: none;
+}
+
+.btn {
+  display: inline-block;
+  width: 130px;;
+  height: 41px;
+  font: bold 1.27em/2.2em Montserrat,sans-serif;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 0 8px;
+  margin-top: 8px;
+  border-radius: 3px;
+}
+.btn:focus,
+.btn:hover,
+.btn:active {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.btn svg {
+  position: relative;
+  top: 7px;
+  margin-right: 5px;
+  fill: white;
+}
+#mylogo{
+    position: absolute;
+    right: 50%;
+    display: inline-block;
+    bottom: 8px;
+    margin: 10px -25px;
+}
+
+#social{
+    width:150px;
+}
+
+
+@media only screen and (max-width:650px){
+    
+    #topBar{
+        font-size: 0.7em;
+        padding: 3px 10px;
+    }
+    
+    #mainContainer{
+        width: 300px;
+        height: 300px;
+        margin: -150px -150px;
+        padding:0;
+    }
+    
+    .inputcolor{
+        width:80%;
+        font-size: 1.5em;
+    }
+    
+    .inputcolor:first-child{
+        margin-top:60px;
+    }
+    
+    .colorWarn{
+        margin: -75px 0;
+    }
+    
+    #mylogo{
+    right: 40px;
+    }
+}
