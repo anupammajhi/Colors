@@ -7,7 +7,7 @@ A simple tool to convert CSS colors among [RGB](#rgb) , [HEX](#hex) and [HSL](#h
 -----------------------------------------------------------
 
 Demo : https://anupammajhi.github.io/Colors/
-
+<a id="howtouse"></a>
 How To Use It
 -------------
 
