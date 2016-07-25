@@ -28,9 +28,9 @@ Accepted Color Formats
 
 
 ----------
+<a id="rgb"></a>
 
-
-**RGB**<a id="rgb"></a>
+**RGB**
 
  
 
@@ -45,7 +45,7 @@ Accepted Color Formats
 
 
 ----------
-
+<a id="hex"></a>
 
 **HEX**
 
@@ -64,6 +64,7 @@ Accepted Color Formats
 
 
 ----------
+<a id="hsl"></a>
 
 **HSL**
 
