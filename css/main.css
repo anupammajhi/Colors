@@ -78,7 +78,7 @@ html{
 }
 
 .colorWarn{
-    border:solid;
+    border:hidden;
     border-radius: 50%;
     background-color: burlywood;
     font-size: 1.4em;
@@ -90,6 +90,7 @@ html{
     float: right;
     margin: -75px -40px;
     display: none;
+    color:black;
 }
 
 .btn {
