@@ -30,7 +30,7 @@ Accepted Color Formats
 ----------
 
 
-**RGB**
+[**RGB**](#rgb)
 
  
 
@@ -47,7 +47,7 @@ Accepted Color Formats
 ----------
 
 
-**HEX**
+[**HEX**](#hex)
 
  
 
@@ -65,7 +65,7 @@ Accepted Color Formats
 
 ----------
 
-**HSL**
+[**HSL**](#hsl)
 
  
 
