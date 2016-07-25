@@ -3,7 +3,7 @@ Colors
 
 ![Screenshot from anupammajhi.github.io/Colors/](http://i.imgur.com/feJUdyH.png)
 
-A simple tool to convert CSS colors among RGB , HEX and HSL
+A simple tool to convert CSS colors among [RGB](#rgb) , [HEX](#hex) and [HSL](#hsl)
 -----------------------------------------------------------
 
 Demo : https://anupammajhi.github.io/Colors/
@@ -30,7 +30,7 @@ Accepted Color Formats
 ----------
 
 
-[**RGB**](#rgb)
+**RGB**<a id="rgb"></a>
 
  
 
@@ -47,7 +47,7 @@ Accepted Color Formats
 ----------
 
 
-[**HEX**](#hex)
+**HEX**
 
  
 
@@ -65,7 +65,7 @@ Accepted Color Formats
 
 ----------
 
-[**HSL**](#hsl)
+**HSL**
 
  
 
