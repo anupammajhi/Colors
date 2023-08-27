@@ -68,8 +68,8 @@ html{
     margin: 30px auto;
     border:none;
     border-bottom: inset thin ;
-    border-color: beige
-    line-height: 55px;
+    border-color: beige;
+    /* line-height: 55px; */
     background: transparent;
 }
 
@@ -91,6 +91,27 @@ html{
     margin: -75px -40px;
     display: none;
     color:black;
+}
+
+#colorpickerDiv label {
+  font-size: 0.8rem;
+  text-align: center;
+  display: block;
+}
+
+#colorpicker, #colorpickerDiv img {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left: 50%;
+  margin-left: -20px;
+  z-index: 100;
+}
+
+#colorpicker {
+  background-color: red;
+  opacity: 0;
+  z-index: 101;
 }
 
 .btn {

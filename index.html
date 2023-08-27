@@ -1,66 +1,109 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="robots" content="index, nofollow">
-        
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-title" content="CSS Color Converter | RGB HEX HSL">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        
-        <meta name="description" content="A simple tool to convert CSS colors among RGB , HEX and HSL">
-        <meta name="keywords" content="hex, hexadecimal, rgb, converter, hex to rgb, hexadecimal to rgb, hex to rgb converter, rgb to hex, rgb to hex converter, convert hex to rgb, convert rgb to hex, hex to rgb conversion, rgb to hex conversion, hex converter, rgb converter, simple hex to rgb converter, rgb to hexadecimal, rgb to hexadecimal converter, hsl,css, hsl to rgb, rgb to hsl, hex to hsl, hsl to hex, rgb hex hsl, color, picker, color picker, html, web">
-        <meta property="og:title" content="CSS Color Converter | RGB HEX HSL" />
-        <meta property="og:description" content="A simple tool to convert CSS colors among RGB , HEX and HSL" />
-        <meta property="og:url" content="http://colors.anupamm.com" />
-        
-        <title>CSS Color Converter | RGB HEX HSL</title>
-        
-        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-        
-        <link rel="stylesheet" type="text/css" href='css/main.css'>
-        
-        
-        
-    </head>
-    <body>
-        <div id="topBar">
-            <h1>CSS COLORS</h1>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="index, nofollow">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="CSS Color Converter | RGB HEX HSL">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <meta name="description" content="A simple tool to convert CSS colors among RGB , HEX and HSL">
+    <meta name="keywords"
+        content="hex, hexadecimal, rgb, converter, hex to rgb, hexadecimal to rgb, hex to rgb converter, rgb to hex, rgb to hex converter, convert hex to rgb, convert rgb to hex, hex to rgb conversion, rgb to hex conversion, hex converter, rgb converter, simple hex to rgb converter, rgb to hexadecimal, rgb to hexadecimal converter, hsl,css, hsl to rgb, rgb to hsl, hex to hsl, hsl to hex, rgb hex hsl, color, picker, color picker, html, web">
+    <meta property="og:title" content="CSS Color Converter | RGB HEX HSL" />
+    <meta property="og:description" content="A simple tool to convert CSS colors among RGB , HEX and HSL" />
+    <meta property="og:url" content="http://colors.anupamm.com" />
+
+    <title>CSS Color Converter | RGB HEX HSL</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link rel="icon" type="image/png" href="colorpicker.png">
+    <link rel="stylesheet" type="text/css" href='css/main.css'>
+
+
+
+</head>
+
+<body>
+    <div id="topBar">
+        <h1>CSS COLORS</h1>
+    </div>
+    <div id="mainContainer">
+        <form>
+            <input type="text" id="rgb" autocomplete="off" class="inputcolor" spellcheck="false"><a
+                href="https://github.com/anupammajhi/Colors/blob/master/README.md#rgb" target="_blank">
+                <div id="rgbWarn" class="colorWarn">!</div>
+            </a>
+            <input type="text" id="hex" autocomplete="off" class="inputcolor" spellcheck="false"><a
+                href="https://github.com/anupammajhi/Colors/blob/master/README.md#hex" target="_blank">
+                <div id="hexWarn" class="colorWarn">!</div>
+            </a>
+            <input type="text" id="hsl" autocomplete="off" class="inputcolor" spellcheck="false"><a
+                href="https://github.com/anupammajhi/Colors/blob/master/README.md#hsl" target="_blank">
+                <div id="hslWarn" class="colorWarn">!</div>
+            </a>
+        </form>
+        <div id="colorpickerDiv">
+            <label for="colorpicker"></label>
+            <input type="color" id="colorpicker" value="#00C25E">
+            <img src="colorpicker.png" alt="">
         </div>
-        <div id="mainContainer">
-            <form>
-                <input type="text" id="rgb" autocomplete="off" class="inputcolor" spellcheck="false"><a href="https://github.com/anupammajhi/Colors/blob/master/README.md#rgb" target="_blank"><div id="rgbWarn" class="colorWarn">!</div></a>
-                <input type="text" id="hex" autocomplete="off" class="inputcolor" spellcheck="false"><a href="https://github.com/anupammajhi/Colors/blob/master/README.md#hex" target="_blank"><div id="hexWarn" class="colorWarn">!</div></a>
-                <input type="text" id="hsl" autocomplete="off" class="inputcolor" spellcheck="false"><a href="https://github.com/anupammajhi/Colors/blob/master/README.md#hsl" target="_blank"><div id="hslWarn" class="colorWarn">!</div></a>
-            </form>
+    </div>
+    <div id="bottomBar">
+        <div id="social">
+            <a class="tweet btn"
+                href="https://twitter.com/share?text=Color+Converter++%7C++%23CSS++%7C++by+%40anupamFX%0D%0AConvert+%23RGB+%23HEX+and+%23HSL%0D%0AVisit+"
+                data-show-count="true"><svg width="25px" height="25px" viewBox="0 0 30 24" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <path
+                        d="M29.9412896,2.83945075 C28.8553433,3.32117015 27.6882269,3.64678209 26.4632955,3.79300299 C27.7133731,3.04355821 28.6737313,1.85688358 29.125791,0.442746269 C27.9556657,1.1367403 26.6597373,1.64066866 25.2803463,1.91219104 C24.1757731,0.735259701 22.6019463,0 20.860191,0 C16.9514149,0 14.078006,3.64771343 14.9614209,7.43641791 C9.92858507,7.18395224 5.46644776,4.77299104 2.47977313,1.10944478 C0.893480597,3.83061493 1.65696716,7.39242985 4.35678806,9.1942209 C3.36426269,9.16284179 2.43026866,8.89038806 1.61398209,8.4366806 C1.54828657,11.2450388 3.55547463,13.8671284 6.47129552,14.4509373 C5.61904478,14.6828418 4.68555224,14.7359284 3.73672836,14.554603 C4.50716418,16.9617672 6.74568358,18.7098269 9.39642985,18.7599761 C6.84426269,20.7554149 3.63442388,21.6437731 0.424871642,21.2666507 C3.10470448,22.9860537 6.28517015,23.9890388 9.70964776,23.987391 C20.9525373,23.987391 27.3045134,14.4912 26.9216597,5.97413731 C28.1028896,5.12317612 29.1317373,4.05571343 29.9412896,2.83945075 L29.9412896,2.83945075 Z">
+                    </path>
+                </svg>Tweet</a>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8" data-size="large"></script>
+
+            <a class="btn" href="https://github.com/anupammajhi" data-style="mega"
+                aria-label="Follow @anupammajhi on GitHub" target="_blank"><svg enable-background="new 0 0 512 512"
+                    height="25px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="25px" xml:space="preserve"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g>
+                        <path clip-rule="evenodd"
+                            d="M296.133,354.174c49.885-5.891,102.942-24.029,102.942-110.192   c0-24.49-8.624-44.448-22.67-59.869c2.266-5.89,9.515-28.114-2.734-58.947c0,0-18.139-5.898-60.759,22.669   c-18.139-4.983-38.09-8.163-56.682-8.163c-19.053,0-39.011,3.18-56.697,8.163c-43.082-28.567-61.22-22.669-61.22-22.669   c-12.241,30.833-4.983,53.057-2.718,58.947c-14.061,15.42-22.677,35.379-22.677,59.869c0,86.163,53.057,104.301,102.942,110.192   c-6.344,5.452-12.241,15.873-14.507,30.387c-12.702,5.438-45.808,15.873-65.758-18.592c0,0-11.795-21.31-34.012-22.669   c0,0-22.224-0.453-1.813,13.592c0,0,14.96,6.812,24.943,32.653c0,0,13.6,43.089,76.179,29.48v38.543   c0,5.906-4.53,12.702-15.865,10.89C96.139,438.977,32.2,354.626,32.2,255.77c0-123.807,100.216-224.022,224.03-224.022   c123.347,0,224.023,100.216,223.57,224.022c0,98.856-63.946,182.754-152.828,212.688c-11.342,2.266-15.873-4.53-15.873-10.89   V395.45C311.1,374.577,304.288,360.985,296.133,354.174L296.133,354.174z M512,256.23C512,114.73,397.263,0,256.23,0   C114.73,0,0,114.73,0,256.23C0,397.263,114.73,512,256.23,512C397.263,512,512,397.263,512,256.23L512,256.23z" />
+                    </g>
+                </svg>Github</a>
+            <script async defer src="https://buttons.github.io/buttons.js"></script>
         </div>
-        <div id="bottomBar">
-            <div id="social">
-            <a class="tweet btn" href="https://twitter.com/share?text=Color+Converter++%7C++%23CSS++%7C++by+%40anupamFX%0D%0AConvert+%23RGB+%23HEX+and+%23HSL%0D%0AVisit+" data-show-count="true"><svg width="25px" height="25px" viewBox="0 0 30 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-              <path d="M29.9412896,2.83945075 C28.8553433,3.32117015 27.6882269,3.64678209 26.4632955,3.79300299 C27.7133731,3.04355821 28.6737313,1.85688358 29.125791,0.442746269 C27.9556657,1.1367403 26.6597373,1.64066866 25.2803463,1.91219104 C24.1757731,0.735259701 22.6019463,0 20.860191,0 C16.9514149,0 14.078006,3.64771343 14.9614209,7.43641791 C9.92858507,7.18395224 5.46644776,4.77299104 2.47977313,1.10944478 C0.893480597,3.83061493 1.65696716,7.39242985 4.35678806,9.1942209 C3.36426269,9.16284179 2.43026866,8.89038806 1.61398209,8.4366806 C1.54828657,11.2450388 3.55547463,13.8671284 6.47129552,14.4509373 C5.61904478,14.6828418 4.68555224,14.7359284 3.73672836,14.554603 C4.50716418,16.9617672 6.74568358,18.7098269 9.39642985,18.7599761 C6.84426269,20.7554149 3.63442388,21.6437731 0.424871642,21.2666507 C3.10470448,22.9860537 6.28517015,23.9890388 9.70964776,23.987391 C20.9525373,23.987391 27.3045134,14.4912 26.9216597,5.97413731 C28.1028896,5.12317612 29.1317373,4.05571343 29.9412896,2.83945075 L29.9412896,2.83945075 Z"></path>
-            </svg>Tweet</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8" data-size="large"></script>
-            
-            <a class="btn" href="https://github.com/anupammajhi" data-style="mega" aria-label="Follow @anupammajhi on GitHub" target="_blank"><svg enable-background="new 0 0 512 512" height="25px" id="Layer_1" version="1.1" viewBox="0 0 512 512" width="25px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path clip-rule="evenodd" d="M296.133,354.174c49.885-5.891,102.942-24.029,102.942-110.192   c0-24.49-8.624-44.448-22.67-59.869c2.266-5.89,9.515-28.114-2.734-58.947c0,0-18.139-5.898-60.759,22.669   c-18.139-4.983-38.09-8.163-56.682-8.163c-19.053,0-39.011,3.18-56.697,8.163c-43.082-28.567-61.22-22.669-61.22-22.669   c-12.241,30.833-4.983,53.057-2.718,58.947c-14.061,15.42-22.677,35.379-22.677,59.869c0,86.163,53.057,104.301,102.942,110.192   c-6.344,5.452-12.241,15.873-14.507,30.387c-12.702,5.438-45.808,15.873-65.758-18.592c0,0-11.795-21.31-34.012-22.669   c0,0-22.224-0.453-1.813,13.592c0,0,14.96,6.812,24.943,32.653c0,0,13.6,43.089,76.179,29.48v38.543   c0,5.906-4.53,12.702-15.865,10.89C96.139,438.977,32.2,354.626,32.2,255.77c0-123.807,100.216-224.022,224.03-224.022   c123.347,0,224.023,100.216,223.57,224.022c0,98.856-63.946,182.754-152.828,212.688c-11.342,2.266-15.873-4.53-15.873-10.89   V395.45C311.1,374.577,304.288,360.985,296.133,354.174L296.133,354.174z M512,256.23C512,114.73,397.263,0,256.23,0   C114.73,0,0,114.73,0,256.23C0,397.263,114.73,512,256.23,512C397.263,512,512,397.263,512,256.23L512,256.23z"/></g></svg>Github</a>
-            <script async defer src="https://buttons.github.io/buttons.js"></script>  
-        </div>
-            
-            <a id="mylogo" href="http://anupamm.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 567.863 567.863" style="enable-background:new 0 0 567.863 567.863;" xml:space="preserve"><g><g><path d="M283.931,0C127.118,0,0,127.119,0,283.931c0,156.813,127.118,283.932,283.931,283.932s283.932-127.119,283.932-283.932    C567.863,127.119,440.744,0,283.931,0z M486.785,407.451c-5.172,3.385-10.992,5.006-16.738,5.006    c-9.977,0-19.75-4.871-25.625-13.838l-10.992-16.768l-34.082-52.02H168.514l-34.083,52.02l-10.985,16.768    c-9.259,14.133-28.219,18.086-42.362,8.826c-14.137-9.266-18.091-28.232-8.825-42.369L258.343,81.078    c5.655-8.629,15.276-13.831,25.594-13.831c10.319,0,19.94,5.202,25.594,13.831l186.078,284.004    C504.875,379.213,500.922,398.186,486.785,407.451z" fill="#FFFFFF"/>
-		<polygon points="208.612,268.631 359.25,268.631 283.931,153.685" fill="#FFFFFF"/></g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g><g></g></svg></a>
-            
-        </div>
-        
-        
-        
-        <!-- Loading jQuery from CDN-->
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-        
-        <!-- If CDN unavailable, load jQuery from local copy -->
-        <script type="text/javascript">
-            window.jQuery || document.write("<script type='text/javascript' src='js/jquery-3.1.0.min.js'><\/script>")
-        </script>
-        <script type="text/javascript" src="js/main.js"></script>
-        
-    </body>
+
+        <a id="mylogo" href="http://anupamm.com" target="_blank"><svg xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="50px"
+                height="50px" viewBox="0 0 567.863 567.863" style="enable-background:new 0 0 567.863 567.863;"
+                xml:space="preserve">
+                <g>
+                    <g>
+                        <path
+                            d="M283.931,0C127.118,0,0,127.119,0,283.931c0,156.813,127.118,283.932,283.931,283.932s283.932-127.119,283.932-283.932    C567.863,127.119,440.744,0,283.931,0z M486.785,407.451c-5.172,3.385-10.992,5.006-16.738,5.006    c-9.977,0-19.75-4.871-25.625-13.838l-10.992-16.768l-34.082-52.02H168.514l-34.083,52.02l-10.985,16.768    c-9.259,14.133-28.219,18.086-42.362,8.826c-14.137-9.266-18.091-28.232-8.825-42.369L258.343,81.078    c5.655-8.629,15.276-13.831,25.594-13.831c10.319,0,19.94,5.202,25.594,13.831l186.078,284.004    C504.875,379.213,500.922,398.186,486.785,407.451z"
+                            fill="#FFFFFF" />
+                        <polygon points="208.612,268.631 359.25,268.631 283.931,153.685" fill="#FFFFFF" />
+                    </g>
+                </g>
+            </svg></a>
+
+    </div>
+
+
+
+    <!-- Loading jQuery from CDN-->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+    <!-- If CDN unavailable, load jQuery from local copy -->
+    <script type="text/javascript">
+        window.jQuery || document.write("<script type='text/javascript' src='js/jquery-3.1.0.min.js'><\/script>")
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</body>
+
 </html>

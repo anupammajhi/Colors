@@ -1,8 +1,9 @@
 $(document).ready(function(){
     
-    var defaultBG = "#84e184";
+    var defaultBG = "#00C25E";
     //To deal with the changing RGB HEX values due to hsl's higher precision
     var hsl = ""; 
+    var hexData = "";
 
     resetColor()
     //For creating Placeholder like effect ////////////////////////////////////////////////////////
@@ -66,6 +67,7 @@ $(document).ready(function(){
                 hsl = hslData;
                 
                 $("#mainContainer").css("background-color",hexData);
+                $("#colorpicker").val(hexData);
                 setTextColor(hexData);
                 
             }
@@ -94,7 +96,7 @@ $(document).ready(function(){
     });
     
     $("#hex").on("keyup change",function(){
-        var hexData = $(this).val();
+        hexData = $(this).val();
         
         //Check if format is #123 or #112233
         
@@ -120,6 +122,7 @@ $(document).ready(function(){
             hsl = hslData;
             
             $("#mainContainer").css("background-color",hexData);
+            $("#colorpicker").val(hexData);
             setTextColor(hexData);
         }
         else{
@@ -151,7 +154,6 @@ $(document).ready(function(){
                     hexData = rgb2hex(hsl2rgb(hslData));
                     rgbData = hsl2rgb(hslData);
                     if(!(hslData.match(/\s*hsl\s*\(\s*[0-9]+\s*\,\s*[0-9]+\s*\%\s*\,\s*[0-9]+\s*\%\s*\)\s*/i))){
-                        console.log("Test")
                         hslData = "hsl("+hslArr[0]+","+hslArr[1]+"%,"+hslArr[2]+"%)"
                     }
                     
@@ -160,6 +162,7 @@ $(document).ready(function(){
                     $("#rgb").val(rgbData);
                     
                     $("#mainContainer").css("background-color",hexData);
+                    $("#colorpicker").val(hexData);
                     setTextColor(hexData);
 
                 }
@@ -188,6 +191,14 @@ $(document).ready(function(){
                 resetColor();
             }
         }
+    });
+
+    $("#colorpicker").on("input change", function (){
+        // $("#mainContainer").css("background-color",hexData);
+        hexData = $(this).val();
+        $("#hex").val(hexData);
+        $("#hex").trigger("change");
+
     });
     
     function setTextColor(colorData){
@@ -222,11 +233,6 @@ $(document).ready(function(){
     
     
 //CSS Stuff /////////////////////////////////////////////////////
-    
-    
-    function convertColor(fromModel,toModel){
-        
-    }
     
     function hex2rgb(hexColor){
         rgbColor = "rgb(";
